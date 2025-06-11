@@ -14,7 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  my-dystopian-robot-grilfriend = pkgs.callPackage ./pkgs/my-dystopian-robot-grilfriend { };
+  my-dystopian-robot-girlfriend = pkgs.callPackage ./pkgs/my-dystopian-robot-girlfriend { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
