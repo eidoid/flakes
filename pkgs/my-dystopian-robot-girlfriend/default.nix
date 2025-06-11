@@ -103,10 +103,12 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     description = "My Dystopian Robot Grilfriend Game";
+    mainProgram = "${pname}";
     homepage = "https://incontinentcell.itch.io/factorial-omega";
     changelog = "https://incontinentcell.itch.io/factorial-omega/devlog/884412/09015-update-released";
     license = licenses.unfree;
+    sourceProvenance = with sourceTypes; [ binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
-    maintainers = [ maintainers.eidoid ];
+    maintainers = with maintainers; [ eidoid ];
   };
 }
